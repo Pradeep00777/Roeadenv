@@ -1,0 +1,1254 @@
+{
+ "agent": "table_reader",
+ "variant": "text",
+ "summary": {
+  "n": 30,
+  "accuracy": 0.13333333333333333,
+  "mean_reward": 0.13333333333333333,
+  "cited_when_correct": 1.0,
+  "outcomes": {
+   "wrong_value": 20,
+   "false_refusal": 5,
+   "correct": 4,
+   "hallucinated": 1
+  },
+  "by_category": {
+   "derived": "0/4",
+   "image_only": "0/2",
+   "lookup": "0/13",
+   "messy": "2/4",
+   "spec": "0/3",
+   "unanswerable": "2/3",
+   "units": "0/1"
+  }
+ },
+ "results": [
+  {
+   "id": "T01",
+   "category": "lookup",
+   "correct": false,
+   "citation_ok": false,
+   "reward": 0.0,
+   "outcome": "wrong_value",
+   "submitted": {
+    "answer": "40",
+    "status": "answered",
+    "citation_page": 26
+   },
+   "expected": 487707,
+   "steps": 3,
+   "trace": [
+    {
+     "tool": "search",
+     "args": {
+      "query": "How many road accidents were reported in India in calendar year 2024?",
+      "k": 3
+     },
+     "out": [
+      26,
+      24,
+      25
+     ]
+    },
+    {
+     "tool": "read_page",
+     "args": {
+      "page": 26
+     },
+     "out": "<3995 chars>"
+    }
+   ]
+  },
+  {
+   "id": "T02",
+   "category": "lookup",
+   "correct": false,
+   "citation_ok": false,
+   "reward": 0.0,
+   "outcome": "wrong_value",
+   "submitted": {
+    "answer": "7.9",
+    "status": "answered",
+    "citation_page": 45
+   },
+   "expected": 43910,
+   "steps": 4,
+   "trace": [
+    {
+     "tool": "search",
+     "args": {
+      "query": "How many road accidents did Kerala report in 2022?",
+      "k": 3
+     },
+     "out": [
+      35,
+      45,
+      109
+     ]
+    },
+    {
+     "tool": "read_page",
+     "args": {
+      "page": 35
+     },
+     "out": "<3574 chars>"
+    },
+    {
+     "tool": "read_page",
+     "args": {
+      "page": 45
+     },
+     "out": "<7298 chars>"
+    }
+   ]
+  },
+  {
+   "id": "T03",
+   "category": "lookup",
+   "correct": false,
+   "citation_ok": false,
+   "reward": 0.0,
+   "outcome": "wrong_value",
+   "submitted": {
+    "answer": "5.83",
+    "status": "answered",
+    "citation_page": 91
+   },
+   "expected": 25986,
+   "steps": 5,
+   "trace": [
+    {
+     "tool": "search",
+     "args": {
+      "query": "How many road accidents did Telangana report in 2024?",
+      "k": 3
+     },
+     "out": [
+      140,
+      104,
+      91
+     ]
+    },
+    {
+     "tool": "read_page",
+     "args": {
+      "page": 140
+     },
+     "out": "<3856 chars>"
+    },
+    {
+     "tool": "read_page",
+     "args": {
+      "page": 104
+     },
+     "out": "<3312 chars>"
+    },
+    {
+     "tool": "read_page",
+     "args": {
+      "page": 91
+     },
+     "out": "<4190 chars>"
+    }
+   ]
+  },
+  {
+   "id": "T04",
+   "category": "lookup",
+   "correct": false,
+   "citation_ok": false,
+   "reward": 0.0,
+   "outcome": "wrong_value",
+   "submitted": {
+    "answer": "47.5",
+    "status": "answered",
+    "citation_page": 45
+   },
+   "expected": 8,
+   "steps": 4,
+   "trace": [
+    {
+     "tool": "search",
+     "args": {
+      "query": "What was Rajasthan's rank among States/UTs by total number of road accidents in 2024?",
+      "k": 3
+     },
+     "out": [
+      109,
+      45,
+      104
+     ]
+    },
+    {
+     "tool": "read_page",
+     "args": {
+      "page": 109
+     },
+     "out": "<4413 chars>"
+    },
+    {
+     "tool": "read_page",
+     "args": {
+      "page": 45
+     },
+     "out": "<7298 chars>"
+    }
+   ]
+  },
+  {
+   "id": "T05",
+   "category": "lookup",
+   "correct": false,
+   "citation_ok": false,
+   "reward": 0.0,
+   "outcome": "wrong_value",
+   "submitted": {
+    "answer": "6.8",
+    "status": "answered",
+    "citation_page": 114
+   },
+   "expected": 11762,
+   "steps": 5,
+   "trace": [
+    {
+     "tool": "search",
+     "args": {
+      "query": "How many persons were killed in road accidents in Rajasthan in 2023?",
+      "k": 3
+     },
+     "out": [
+      109,
+      18,
+      114
+     ]
+    },
+    {
+     "tool": "read_page",
+     "args": {
+      "page": 109
+     },
+     "out": "<4413 chars>"
+    },
+    {
+     "tool": "read_page",
+     "args": {
+      "page": 18
+     },
+     "out": "<4225 chars>"
+    },
+    {
+     "tool": "read_page",
+     "args": {
+      "page": 114
+     },
+     "out": "<3218 chars>"
+    }
+   ]
+  },
+  {
+   "id": "T06",
+   "category": "lookup",
+   "correct": false,
+   "citation_ok": false,
+   "reward": 0.0,
+   "outcome": "false_refusal",
+   "submitted": {
+    "answer": null,
+    "status": "not_available",
+    "citation_page": null
+   },
+   "expected": 286,
+   "steps": 5,
+   "trace": [
+    {
+     "tool": "search",
+     "args": {
+      "query": "How many persons were killed in road accidents in Goa in 2024?",
+      "k": 3
+     },
+     "out": [
+      109,
+      140,
+      104
+     ]
+    },
+    {
+     "tool": "read_page",
+     "args": {
+      "page": 109
+     },
+     "out": "<4413 chars>"
+    },
+    {
+     "tool": "read_page",
+     "args": {
+      "page": 140
+     },
+     "out": "<3856 chars>"
+    },
+    {
+     "tool": "read_page",
+     "args": {
+      "page": 104
+     },
+     "out": "<3312 chars>"
+    }
+   ]
+  },
+  {
+   "id": "T07",
+   "category": "lookup",
+   "correct": false,
+   "citation_ok": false,
+   "reward": 0.0,
+   "outcome": "wrong_value",
+   "submitted": {
+    "answer": "37,153",
+    "status": "answered",
+    "citation_page": 77
+   },
+   "expected": 54122,
+   "steps": 3,
+   "trace": [
+    {
+     "tool": "search",
+     "args": {
+      "query": "How many persons killed in road accidents in 2024 were not wearing a helmet?",
+      "k": 3
+     },
+     "out": [
+      77,
+      26,
+      84
+     ]
+    },
+    {
+     "tool": "read_page",
+     "args": {
+      "page": 77
+     },
+     "out": "<3557 chars>"
+    }
+   ]
+  },
+  {
+   "id": "T08",
+   "category": "lookup",
+   "correct": false,
+   "citation_ok": false,
+   "reward": 0.0,
+   "outcome": "wrong_value",
+   "submitted": {
+    "answer": "6.12",
+    "status": "answered",
+    "citation_page": 129
+   },
+   "expected": 70.28,
+   "steps": 3,
+   "trace": [
+    {
+     "tool": "search",
+     "args": {
+      "query": "What percentage of road accident deaths in 2024 were attributed to over-speeding?",
+      "k": 3
+     },
+     "out": [
+      129,
+      66,
+      65
+     ]
+    },
+    {
+     "tool": "read_page",
+     "args": {
+      "page": 129
+     },
+     "out": "<3355 chars>"
+    }
+   ]
+  },
+  {
+   "id": "T09",
+   "category": "lookup",
+   "correct": false,
+   "citation_ok": false,
+   "reward": 0.0,
+   "outcome": "false_refusal",
+   "submitted": {
+    "answer": null,
+    "status": "not_available",
+    "citation_page": null
+   },
+   "expected": 1551,
+   "steps": 5,
+   "trace": [
+    {
+     "tool": "search",
+     "args": {
+      "query": "How many persons were killed in road accidents in Delhi in 2024?",
+      "k": 3
+     },
+     "out": [
+      139,
+      109,
+      2
+     ]
+    },
+    {
+     "tool": "read_page",
+     "args": {
+      "page": 139
+     },
+     "out": "<1756 chars>"
+    },
+    {
+     "tool": "read_page",
+     "args": {
+      "page": 109
+     },
+     "out": "<4413 chars>"
+    },
+    {
+     "tool": "read_page",
+     "args": {
+      "page": 2
+     },
+     "out": "<196 chars>"
+    }
+   ]
+  },
+  {
+   "id": "T10",
+   "category": "lookup",
+   "correct": false,
+   "citation_ok": false,
+   "reward": 0.0,
+   "outcome": "wrong_value",
+   "submitted": {
+    "answer": "860",
+    "status": "answered",
+    "citation_page": 124
+   },
+   "expected": 3115,
+   "steps": 3,
+   "trace": [
+    {
+     "tool": "search",
+     "args": {
+      "query": "How many road accidents were recorded in Jaipur (million-plus city) in 2024?",
+      "k": 3
+     },
+     "out": [
+      124,
+      121,
+      123
+     ]
+    },
+    {
+     "tool": "read_page",
+     "args": {
+      "page": 124
+     },
+     "out": "<5268 chars>"
+    }
+   ]
+  },
+  {
+   "id": "T11",
+   "category": "lookup",
+   "correct": false,
+   "citation_ok": false,
+   "reward": 0.0,
+   "outcome": "wrong_value",
+   "submitted": {
+    "answer": "5.11",
+    "status": "answered",
+    "citation_page": 111
+   },
+   "expected": 73.8,
+   "steps": 3,
+   "trace": [
+    {
+     "tool": "search",
+     "args": {
+      "query": "What was the combined share (%) of the top 10 States in road accident deaths in 2024?",
+      "k": 3
+     },
+     "out": [
+      111,
+      106,
+      63
+     ]
+    },
+    {
+     "tool": "read_page",
+     "args": {
+      "page": 111
+     },
+     "out": "<3760 chars>"
+    }
+   ]
+  },
+  {
+   "id": "T12",
+   "category": "lookup",
+   "correct": false,
+   "citation_ok": false,
+   "reward": 0.0,
+   "outcome": "wrong_value",
+   "submitted": {
+    "answer": "Tamil Nadu",
+    "status": "answered",
+    "citation_page": 35
+   },
+   "expected": "Uttar Pradesh",
+   "steps": 3,
+   "trace": [
+    {
+     "tool": "search",
+     "args": {
+      "query": "Which State recorded the highest number of road accident deaths in 2024?",
+      "k": 3
+     },
+     "out": [
+      35,
+      67,
+      90
+     ]
+    },
+    {
+     "tool": "read_page",
+     "args": {
+      "page": 35
+     },
+     "out": "<3574 chars>"
+    }
+   ]
+  },
+  {
+   "id": "T13",
+   "category": "lookup",
+   "correct": false,
+   "citation_ok": false,
+   "reward": 0.0,
+   "outcome": "wrong_value",
+   "submitted": {
+    "answer": "82,127",
+    "status": "answered",
+    "citation_page": 118
+   },
+   "expected": 164378,
+   "steps": 3,
+   "trace": [
+    {
+     "tool": "search",
+     "args": {
+      "query": "How many fatal road accidents were there in India in 2024?",
+      "k": 3
+     },
+     "out": [
+      118,
+      89,
+      24
+     ]
+    },
+    {
+     "tool": "read_page",
+     "args": {
+      "page": 118
+     },
+     "out": "<3428 chars>"
+    }
+   ]
+  },
+  {
+   "id": "T14",
+   "category": "messy",
+   "correct": true,
+   "citation_ok": true,
+   "reward": 1.0,
+   "outcome": "correct",
+   "submitted": {
+    "answer": null,
+    "status": "not_available",
+    "citation_page": 107
+   },
+   "expected": null,
+   "steps": 3,
+   "trace": [
+    {
+     "tool": "search",
+     "args": {
+      "query": "How many road accidents did Ladakh report in 2020?",
+      "k": 3
+     },
+     "out": [
+      107,
+      113,
+      109
+     ]
+    },
+    {
+     "tool": "read_page",
+     "args": {
+      "page": 107
+     },
+     "out": "<5453 chars>"
+    }
+   ]
+  },
+  {
+   "id": "T15",
+   "category": "messy",
+   "correct": true,
+   "citation_ok": true,
+   "reward": 1.0,
+   "outcome": "correct",
+   "submitted": {
+    "answer": "236",
+    "status": "answered",
+    "citation_page": 107
+   },
+   "expected": 236,
+   "steps": 3,
+   "trace": [
+    {
+     "tool": "search",
+     "args": {
+      "query": "How many road accidents did Ladakh report in 2021?",
+      "k": 3
+     },
+     "out": [
+      107,
+      113,
+      109
+     ]
+    },
+    {
+     "tool": "read_page",
+     "args": {
+      "page": 107
+     },
+     "out": "<5453 chars>"
+    }
+   ]
+  },
+  {
+   "id": "T16",
+   "category": "messy",
+   "correct": false,
+   "citation_ok": false,
+   "reward": 0.0,
+   "outcome": "false_refusal",
+   "submitted": {
+    "answer": null,
+    "status": "not_available",
+    "citation_page": null
+   },
+   "expected": -100.0,
+   "steps": 5,
+   "trace": [
+    {
+     "tool": "search",
+     "args": {
+      "query": "By what percentage did road accidents in Lakshadweep change in 2024 compared with 2023?",
+      "k": 3
+     },
+     "out": [
+      38,
+      79,
+      83
+     ]
+    },
+    {
+     "tool": "read_page",
+     "args": {
+      "page": 38
+     },
+     "out": "<2881 chars>"
+    },
+    {
+     "tool": "read_page",
+     "args": {
+      "page": 79
+     },
+     "out": "<4708 chars>"
+    },
+    {
+     "tool": "read_page",
+     "args": {
+      "page": 83
+     },
+     "out": "<3324 chars>"
+    }
+   ]
+  },
+  {
+   "id": "T17",
+   "category": "messy",
+   "correct": false,
+   "citation_ok": false,
+   "reward": 0.0,
+   "outcome": "wrong_value",
+   "submitted": {
+    "answer": "1.80",
+    "status": "answered",
+    "citation_page": 91
+   },
+   "expected": 135,
+   "steps": 4,
+   "trace": [
+    {
+     "tool": "search",
+     "args": {
+      "query": "How many road accidents did Andaman & Nicobar Islands report in 2024?",
+      "k": 3
+     },
+     "out": [
+      140,
+      91,
+      104
+     ]
+    },
+    {
+     "tool": "read_page",
+     "args": {
+      "page": 140
+     },
+     "out": "<3856 chars>"
+    },
+    {
+     "tool": "read_page",
+     "args": {
+      "page": 91
+     },
+     "out": "<4190 chars>"
+    }
+   ]
+  },
+  {
+   "id": "T18",
+   "category": "units",
+   "correct": false,
+   "citation_ok": false,
+   "reward": 0.0,
+   "outcome": "wrong_value",
+   "submitted": {
+    "answer": "8.2",
+    "status": "answered",
+    "citation_page": 147
+   },
+   "expected": 4.71,
+   "steps": 3,
+   "trace": [
+    {
+     "tool": "search",
+     "args": {
+      "query": "How many persons were injured in road accidents in India in 2024, expressed in lakh (two decimals)?",
+      "k": 3
+     },
+     "out": [
+      147,
+      148,
+      58
+     ]
+    },
+    {
+     "tool": "read_page",
+     "args": {
+      "page": 147
+     },
+     "out": "<3313 chars>"
+    }
+   ]
+  },
+  {
+   "id": "T19",
+   "category": "derived",
+   "correct": false,
+   "citation_ok": false,
+   "reward": 0.0,
+   "outcome": "wrong_value",
+   "submitted": {
+    "answer": "13,427",
+    "status": "answered",
+    "citation_page": 111
+   },
+   "expected": 97095,
+   "steps": 3,
+   "trace": [
+    {
+     "tool": "search",
+     "args": {
+      "query": "What was the combined number of road accidents in 2024 in Rajasthan, Gujarat and Madhya Pradesh?",
+      "k": 3
+     },
+     "out": [
+      111,
+      140,
+      91
+     ]
+    },
+    {
+     "tool": "read_page",
+     "args": {
+      "page": 111
+     },
+     "out": "<3760 chars>"
+    }
+   ]
+  },
+  {
+   "id": "T20",
+   "category": "derived",
+   "correct": false,
+   "citation_ok": false,
+   "reward": 0.0,
+   "outcome": "wrong_value",
+   "submitted": {
+    "answer": "4.2",
+    "status": "answered",
+    "citation_page": 90
+   },
+   "expected": 20,
+   "steps": 3,
+   "trace": [
+    {
+     "tool": "search",
+     "args": {
+      "query": "How many of the 36 States/UTs recorded fewer road accidents in 2024 than in 2023?",
+      "k": 3
+     },
+     "out": [
+      90,
+      104,
+      112
+     ]
+    },
+    {
+     "tool": "read_page",
+     "args": {
+      "page": 90
+     },
+     "out": "<5629 chars>"
+    }
+   ]
+  },
+  {
+   "id": "T21",
+   "category": "derived",
+   "correct": false,
+   "citation_ok": false,
+   "reward": 0.0,
+   "outcome": "wrong_value",
+   "submitted": {
+    "answer": "43,910",
+    "status": "answered",
+    "citation_page": 106
+   },
+   "expected": 10.01,
+   "steps": 3,
+   "trace": [
+    {
+     "tool": "search",
+     "args": {
+      "query": "Kerala's 2024 road accidents as a percentage of the all-India total (two decimals)?",
+      "k": 3
+     },
+     "out": [
+      106,
+      107,
+      111
+     ]
+    },
+    {
+     "tool": "read_page",
+     "args": {
+      "page": 106
+     },
+     "out": "<4390 chars>"
+    }
+   ]
+  },
+  {
+   "id": "T22",
+   "category": "derived",
+   "correct": false,
+   "citation_ok": false,
+   "reward": 0.0,
+   "outcome": "wrong_value",
+   "submitted": {
+    "answer": "West Bengal",
+    "status": "answered",
+    "citation_page": 104
+   },
+   "expected": "Telangana",
+   "steps": 3,
+   "trace": [
+    {
+     "tool": "search",
+     "args": {
+      "query": "Which State/UT had the largest absolute increase in road accidents in 2024 over 2023?",
+      "k": 3
+     },
+     "out": [
+      104,
+      55,
+      56
+     ]
+    },
+    {
+     "tool": "read_page",
+     "args": {
+      "page": 104
+     },
+     "out": "<3312 chars>"
+    }
+   ]
+  },
+  {
+   "id": "T23",
+   "category": "spec",
+   "correct": false,
+   "citation_ok": false,
+   "reward": 0.0,
+   "outcome": "wrong_value",
+   "submitted": {
+    "answer": "1.1",
+    "status": "answered",
+    "citation_page": 34
+   },
+   "expected": 1336,
+   "steps": 3,
+   "trace": [
+    {
+     "tool": "search",
+     "args": {
+      "query": "According to the report, about how many road accidents occurred per day on average in 2024?",
+      "k": 3
+     },
+     "out": [
+      34,
+      90,
+      142
+     ]
+    },
+    {
+     "tool": "read_page",
+     "args": {
+      "page": 34
+     },
+     "out": "<4527 chars>"
+    }
+   ]
+  },
+  {
+   "id": "T24",
+   "category": "spec",
+   "correct": false,
+   "citation_ok": false,
+   "reward": 0.0,
+   "outcome": "wrong_value",
+   "submitted": {
+    "answer": "1.3",
+    "status": "answered",
+    "citation_page": 34
+   },
+   "expected": 1333,
+   "steps": 3,
+   "trace": [
+    {
+     "tool": "search",
+     "args": {
+      "query": "Using the 2024 all-India accident total and the actual number of days in calendar year 2024, what is the average number of accidents per day (nearest whole number)?",
+      "k": 3
+     },
+     "out": [
+      34,
+      26,
+      24
+     ]
+    },
+    {
+     "tool": "read_page",
+     "args": {
+      "page": 34
+     },
+     "out": "<4527 chars>"
+    }
+   ]
+  },
+  {
+   "id": "T25",
+   "category": "spec",
+   "correct": false,
+   "citation_ok": false,
+   "reward": 0.0,
+   "outcome": "false_refusal",
+   "submitted": {
+    "answer": null,
+    "status": "not_available",
+    "citation_page": null
+   },
+   "expected": -1.38,
+   "steps": 5,
+   "trace": [
+    {
+     "tool": "search",
+     "args": {
+      "query": "Using the 2023 and 2024 death counts printed for Goa in Table 5.6, compute the percentage change in 2024 over 2023 (two decimals).",
+      "k": 3
+     },
+     "out": [
+      109,
+      83,
+      127
+     ]
+    },
+    {
+     "tool": "read_page",
+     "args": {
+      "page": 109
+     },
+     "out": "<4413 chars>"
+    },
+    {
+     "tool": "read_page",
+     "args": {
+      "page": 83
+     },
+     "out": "<3324 chars>"
+    },
+    {
+     "tool": "read_page",
+     "args": {
+      "page": 127
+     },
+     "out": "<4169 chars>"
+    }
+   ]
+  },
+  {
+   "id": "T26",
+   "category": "image_only",
+   "correct": false,
+   "citation_ok": false,
+   "reward": 0.0,
+   "outcome": "false_refusal",
+   "submitted": {
+    "answer": null,
+    "status": "not_available",
+    "citation_page": null
+   },
+   "expected": 10775,
+   "steps": 5,
+   "trace": [
+    {
+     "tool": "search",
+     "args": {
+      "query": "How many fatal road accidents were there in Rajasthan in 2024 (State/UT-wise, Annexure 5)?",
+      "k": 3
+     },
+     "out": [
+      140,
+      139,
+      104
+     ]
+    },
+    {
+     "tool": "read_page",
+     "args": {
+      "page": 140
+     },
+     "out": "<3856 chars>"
+    },
+    {
+     "tool": "read_page",
+     "args": {
+      "page": 139
+     },
+     "out": "<1756 chars>"
+    },
+    {
+     "tool": "read_page",
+     "args": {
+      "page": 104
+     },
+     "out": "<3312 chars>"
+    }
+   ]
+  },
+  {
+   "id": "T27",
+   "category": "image_only",
+   "correct": false,
+   "citation_ok": false,
+   "reward": 0.0,
+   "outcome": "wrong_value",
+   "submitted": {
+    "answer": "62.5",
+    "status": "answered",
+    "citation_page": 45
+   },
+   "expected": 73,
+   "steps": 3,
+   "trace": [
+    {
+     "tool": "search",
+     "args": {
+      "query": "How many fatal road accidents were there in Dadra & Nagar Haveli and Daman & Diu in 2023 (Annexure 5)?",
+      "k": 3
+     },
+     "out": [
+      45,
+      140,
+      104
+     ]
+    },
+    {
+     "tool": "read_page",
+     "args": {
+      "page": 45
+     },
+     "out": "<7298 chars>"
+    }
+   ]
+  },
+  {
+   "id": "T28",
+   "category": "unanswerable",
+   "correct": false,
+   "citation_ok": false,
+   "reward": 0.0,
+   "outcome": "hallucinated",
+   "submitted": {
+    "answer": "8.2",
+    "status": "answered",
+    "citation_page": 146
+   },
+   "expected": null,
+   "steps": 3,
+   "trace": [
+    {
+     "tool": "search",
+     "args": {
+      "query": "How many road accidents were reported in India in 2025?",
+      "k": 3
+     },
+     "out": [
+      146,
+      155,
+      147
+     ]
+    },
+    {
+     "tool": "read_page",
+     "args": {
+      "page": 146
+     },
+     "out": "<3714 chars>"
+    }
+   ]
+  },
+  {
+   "id": "T29",
+   "category": "unanswerable",
+   "correct": true,
+   "citation_ok": true,
+   "reward": 1.0,
+   "outcome": "correct",
+   "submitted": {
+    "answer": null,
+    "status": "not_available",
+    "citation_page": null
+   },
+   "expected": null,
+   "steps": 5,
+   "trace": [
+    {
+     "tool": "search",
+     "args": {
+      "query": "What total compensation (in rupees) was paid to road accident victims in Rajasthan in 2024?",
+      "k": 3
+     },
+     "out": [
+      155,
+      92,
+      94
+     ]
+    },
+    {
+     "tool": "read_page",
+     "args": {
+      "page": 155
+     },
+     "out": "<1515 chars>"
+    },
+    {
+     "tool": "read_page",
+     "args": {
+      "page": 92
+     },
+     "out": "<3492 chars>"
+    },
+    {
+     "tool": "read_page",
+     "args": {
+      "page": 94
+     },
+     "out": "<6369 chars>"
+    }
+   ]
+  },
+  {
+   "id": "T30",
+   "category": "unanswerable",
+   "correct": true,
+   "citation_ok": true,
+   "reward": 1.0,
+   "outcome": "correct",
+   "submitted": {
+    "answer": null,
+    "status": "not_available",
+    "citation_page": null
+   },
+   "expected": null,
+   "steps": 5,
+   "trace": [
+    {
+     "tool": "search",
+     "args": {
+      "query": "How many road accidents occurred in Rajasthan in 2019?",
+      "k": 3
+     },
+     "out": [
+      130,
+      60,
+      64
+     ]
+    },
+    {
+     "tool": "read_page",
+     "args": {
+      "page": 130
+     },
+     "out": "<3206 chars>"
+    },
+    {
+     "tool": "read_page",
+     "args": {
+      "page": 60
+     },
+     "out": "<4803 chars>"
+    },
+    {
+     "tool": "read_page",
+     "args": {
+      "page": 64
+     },
+     "out": "<4427 chars>"
+    }
+   ]
+  }
+ ]
+}

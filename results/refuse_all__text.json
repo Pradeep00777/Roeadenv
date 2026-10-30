@@ -1,0 +1,505 @@
+{
+ "agent": "refuse_all",
+ "variant": "text",
+ "summary": {
+  "n": 30,
+  "accuracy": 0.13333333333333333,
+  "mean_reward": 0.13333333333333333,
+  "cited_when_correct": 1.0,
+  "outcomes": {
+   "false_refusal": 26,
+   "correct": 4
+  },
+  "by_category": {
+   "derived": "0/4",
+   "image_only": "0/2",
+   "lookup": "0/13",
+   "messy": "1/4",
+   "spec": "0/3",
+   "unanswerable": "3/3",
+   "units": "0/1"
+  }
+ },
+ "results": [
+  {
+   "id": "T01",
+   "category": "lookup",
+   "correct": false,
+   "citation_ok": false,
+   "reward": 0.0,
+   "outcome": "false_refusal",
+   "submitted": {
+    "answer": null,
+    "status": "not_available",
+    "citation_page": null
+   },
+   "expected": 487707,
+   "steps": 1,
+   "trace": []
+  },
+  {
+   "id": "T02",
+   "category": "lookup",
+   "correct": false,
+   "citation_ok": false,
+   "reward": 0.0,
+   "outcome": "false_refusal",
+   "submitted": {
+    "answer": null,
+    "status": "not_available",
+    "citation_page": null
+   },
+   "expected": 43910,
+   "steps": 1,
+   "trace": []
+  },
+  {
+   "id": "T03",
+   "category": "lookup",
+   "correct": false,
+   "citation_ok": false,
+   "reward": 0.0,
+   "outcome": "false_refusal",
+   "submitted": {
+    "answer": null,
+    "status": "not_available",
+    "citation_page": null
+   },
+   "expected": 25986,
+   "steps": 1,
+   "trace": []
+  },
+  {
+   "id": "T04",
+   "category": "lookup",
+   "correct": false,
+   "citation_ok": false,
+   "reward": 0.0,
+   "outcome": "false_refusal",
+   "submitted": {
+    "answer": null,
+    "status": "not_available",
+    "citation_page": null
+   },
+   "expected": 8,
+   "steps": 1,
+   "trace": []
+  },
+  {
+   "id": "T05",
+   "category": "lookup",
+   "correct": false,
+   "citation_ok": false,
+   "reward": 0.0,
+   "outcome": "false_refusal",
+   "submitted": {
+    "answer": null,
+    "status": "not_available",
+    "citation_page": null
+   },
+   "expected": 11762,
+   "steps": 1,
+   "trace": []
+  },
+  {
+   "id": "T06",
+   "category": "lookup",
+   "correct": false,
+   "citation_ok": false,
+   "reward": 0.0,
+   "outcome": "false_refusal",
+   "submitted": {
+    "answer": null,
+    "status": "not_available",
+    "citation_page": null
+   },
+   "expected": 286,
+   "steps": 1,
+   "trace": []
+  },
+  {
+   "id": "T07",
+   "category": "lookup",
+   "correct": false,
+   "citation_ok": false,
+   "reward": 0.0,
+   "outcome": "false_refusal",
+   "submitted": {
+    "answer": null,
+    "status": "not_available",
+    "citation_page": null
+   },
+   "expected": 54122,
+   "steps": 1,
+   "trace": []
+  },
+  {
+   "id": "T08",
+   "category": "lookup",
+   "correct": false,
+   "citation_ok": false,
+   "reward": 0.0,
+   "outcome": "false_refusal",
+   "submitted": {
+    "answer": null,
+    "status": "not_available",
+    "citation_page": null
+   },
+   "expected": 70.28,
+   "steps": 1,
+   "trace": []
+  },
+  {
+   "id": "T09",
+   "category": "lookup",
+   "correct": false,
+   "citation_ok": false,
+   "reward": 0.0,
+   "outcome": "false_refusal",
+   "submitted": {
+    "answer": null,
+    "status": "not_available",
+    "citation_page": null
+   },
+   "expected": 1551,
+   "steps": 1,
+   "trace": []
+  },
+  {
+   "id": "T10",
+   "category": "lookup",
+   "correct": false,
+   "citation_ok": false,
+   "reward": 0.0,
+   "outcome": "false_refusal",
+   "submitted": {
+    "answer": null,
+    "status": "not_available",
+    "citation_page": null
+   },
+   "expected": 3115,
+   "steps": 1,
+   "trace": []
+  },
+  {
+   "id": "T11",
+   "category": "lookup",
+   "correct": false,
+   "citation_ok": false,
+   "reward": 0.0,
+   "outcome": "false_refusal",
+   "submitted": {
+    "answer": null,
+    "status": "not_available",
+    "citation_page": null
+   },
+   "expected": 73.8,
+   "steps": 1,
+   "trace": []
+  },
+  {
+   "id": "T12",
+   "category": "lookup",
+   "correct": false,
+   "citation_ok": false,
+   "reward": 0.0,
+   "outcome": "false_refusal",
+   "submitted": {
+    "answer": null,
+    "status": "not_available",
+    "citation_page": null
+   },
+   "expected": "Uttar Pradesh",
+   "steps": 1,
+   "trace": []
+  },
+  {
+   "id": "T13",
+   "category": "lookup",
+   "correct": false,
+   "citation_ok": false,
+   "reward": 0.0,
+   "outcome": "false_refusal",
+   "submitted": {
+    "answer": null,
+    "status": "not_available",
+    "citation_page": null
+   },
+   "expected": 164378,
+   "steps": 1,
+   "trace": []
+  },
+  {
+   "id": "T14",
+   "category": "messy",
+   "correct": true,
+   "citation_ok": true,
+   "reward": 1.0,
+   "outcome": "correct",
+   "submitted": {
+    "answer": null,
+    "status": "not_available",
+    "citation_page": null
+   },
+   "expected": null,
+   "steps": 1,
+   "trace": []
+  },
+  {
+   "id": "T15",
+   "category": "messy",
+   "correct": false,
+   "citation_ok": false,
+   "reward": 0.0,
+   "outcome": "false_refusal",
+   "submitted": {
+    "answer": null,
+    "status": "not_available",
+    "citation_page": null
+   },
+   "expected": 236,
+   "steps": 1,
+   "trace": []
+  },
+  {
+   "id": "T16",
+   "category": "messy",
+   "correct": false,
+   "citation_ok": false,
+   "reward": 0.0,
+   "outcome": "false_refusal",
+   "submitted": {
+    "answer": null,
+    "status": "not_available",
+    "citation_page": null
+   },
+   "expected": -100.0,
+   "steps": 1,
+   "trace": []
+  },
+  {
+   "id": "T17",
+   "category": "messy",
+   "correct": false,
+   "citation_ok": false,
+   "reward": 0.0,
+   "outcome": "false_refusal",
+   "submitted": {
+    "answer": null,
+    "status": "not_available",
+    "citation_page": null
+   },
+   "expected": 135,
+   "steps": 1,
+   "trace": []
+  },
+  {
+   "id": "T18",
+   "category": "units",
+   "correct": false,
+   "citation_ok": false,
+   "reward": 0.0,
+   "outcome": "false_refusal",
+   "submitted": {
+    "answer": null,
+    "status": "not_available",
+    "citation_page": null
+   },
+   "expected": 4.71,
+   "steps": 1,
+   "trace": []
+  },
+  {
+   "id": "T19",
+   "category": "derived",
+   "correct": false,
+   "citation_ok": false,
+   "reward": 0.0,
+   "outcome": "false_refusal",
+   "submitted": {
+    "answer": null,
+    "status": "not_available",
+    "citation_page": null
+   },
+   "expected": 97095,
+   "steps": 1,
+   "trace": []
+  },
+  {
+   "id": "T20",
+   "category": "derived",
+   "correct": false,
+   "citation_ok": false,
+   "reward": 0.0,
+   "outcome": "false_refusal",
+   "submitted": {
+    "answer": null,
+    "status": "not_available",
+    "citation_page": null
+   },
+   "expected": 20,
+   "steps": 1,
+   "trace": []
+  },
+  {
+   "id": "T21",
+   "category": "derived",
+   "correct": false,
+   "citation_ok": false,
+   "reward": 0.0,
+   "outcome": "false_refusal",
+   "submitted": {
+    "answer": null,
+    "status": "not_available",
+    "citation_page": null
+   },
+   "expected": 10.01,
+   "steps": 1,
+   "trace": []
+  },
+  {
+   "id": "T22",
+   "category": "derived",
+   "correct": false,
+   "citation_ok": false,
+   "reward": 0.0,
+   "outcome": "false_refusal",
+   "submitted": {
+    "answer": null,
+    "status": "not_available",
+    "citation_page": null
+   },
+   "expected": "Telangana",
+   "steps": 1,
+   "trace": []
+  },
+  {
+   "id": "T23",
+   "category": "spec",
+   "correct": false,
+   "citation_ok": false,
+   "reward": 0.0,
+   "outcome": "false_refusal",
+   "submitted": {
+    "answer": null,
+    "status": "not_available",
+    "citation_page": null
+   },
+   "expected": 1336,
+   "steps": 1,
+   "trace": []
+  },
+  {
+   "id": "T24",
+   "category": "spec",
+   "correct": false,
+   "citation_ok": false,
+   "reward": 0.0,
+   "outcome": "false_refusal",
+   "submitted": {
+    "answer": null,
+    "status": "not_available",
+    "citation_page": null
+   },
+   "expected": 1333,
+   "steps": 1,
+   "trace": []
+  },
+  {
+   "id": "T25",
+   "category": "spec",
+   "correct": false,
+   "citation_ok": false,
+   "reward": 0.0,
+   "outcome": "false_refusal",
+   "submitted": {
+    "answer": null,
+    "status": "not_available",
+    "citation_page": null
+   },
+   "expected": -1.38,
+   "steps": 1,
+   "trace": []
+  },
+  {
+   "id": "T26",
+   "category": "image_only",
+   "correct": false,
+   "citation_ok": false,
+   "reward": 0.0,
+   "outcome": "false_refusal",
+   "submitted": {
+    "answer": null,
+    "status": "not_available",
+    "citation_page": null
+   },
+   "expected": 10775,
+   "steps": 1,
+   "trace": []
+  },
+  {
+   "id": "T27",
+   "category": "image_only",
+   "correct": false,
+   "citation_ok": false,
+   "reward": 0.0,
+   "outcome": "false_refusal",
+   "submitted": {
+    "answer": null,
+    "status": "not_available",
+    "citation_page": null
+   },
+   "expected": 73,
+   "steps": 1,
+   "trace": []
+  },
+  {
+   "id": "T28",
+   "category": "unanswerable",
+   "correct": true,
+   "citation_ok": true,
+   "reward": 1.0,
+   "outcome": "correct",
+   "submitted": {
+    "answer": null,
+    "status": "not_available",
+    "citation_page": null
+   },
+   "expected": null,
+   "steps": 1,
+   "trace": []
+  },
+  {
+   "id": "T29",
+   "category": "unanswerable",
+   "correct": true,
+   "citation_ok": true,
+   "reward": 1.0,
+   "outcome": "correct",
+   "submitted": {
+    "answer": null,
+    "status": "not_available",
+    "citation_page": null
+   },
+   "expected": null,
+   "steps": 1,
+   "trace": []
+  },
+  {
+   "id": "T30",
+   "category": "unanswerable",
+   "correct": true,
+   "citation_ok": true,
+   "reward": 1.0,
+   "outcome": "correct",
+   "submitted": {
+    "answer": null,
+    "status": "not_available",
+    "citation_page": null
+   },
+   "expected": null,
+   "steps": 1,
+   "trace": []
+  }
+ ]
+}
